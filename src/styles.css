@@ -24,8 +24,6 @@
 /* HEADER */
 header {
   padding: 1rem;
-  margin: 0 auto;
-  width: 100%;
   text-align: center;
   border-bottom: 1px solid darkgrey;
   background-color: rgb(247, 247, 239);
