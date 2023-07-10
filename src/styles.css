@@ -1,1 +1,132 @@
-/* You can add global styles to this file, and also import other style files */
+/* COMMON */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Akatab", sans-serif;
+}
+
+.title-1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.title-2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid darkgrey;
+  background-color: rgb(247, 247, 239);
+}
+
+/* FORM */
+
+.formulario {
+  max-width: 700px;
+  border: 1px solid rgba(0, 139, 139, 0.517);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.formulario h2 {
+  padding: 0 1rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.formulario__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formulario__input {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.formulario__fecha {
+  width: 60%;
+}
+
+.formulario__input input {
+  width: 100%;
+}
+
+.formulario__btn {
+  padding: 0 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* NOTICIAS */
+
+.noticias__header {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  background-color: rgb(247, 247, 239);
+}
+
+.noticias__publicadas {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.noticia {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 1px solid rgba(0, 139, 139, 0.517);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgba(245, 245, 245, 0.096);
+}
+
+.noticia h3 {
+  line-height: 1.5rem;
+  text-align: justify;
+  text-justify: auto;
+  width: 95%;
+}
+.noticia img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.noticia p {
+  height: 200px;
+  overflow: scroll;
+  text-align: justify;
+  text-justify: auto;
+  text-indent: 20px;
+}
+
+.noticia span {
+  font-style: italic;
+  font-size: 0.8rem;
+  align-self: flex-end;
+}

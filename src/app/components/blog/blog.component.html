@@ -1,0 +1,47 @@
+<section class="formulario">
+  <h2 class="title-2">Añade tu noticia</h2>
+  <div class="formulario__form">
+    <div class="formulario__input">
+      <label for="titulo">Título</label>
+      <input
+        type="text"
+        id="titulo"
+        placeholder="Introduce un título"
+        [(ngModel)]="newNoticia.titulo"
+      />
+    </div>
+    <div class="formulario__input">
+      <label for="imagen">Imagen</label>
+      <input
+        type="text"
+        id="imagen"
+        placeholder="Introduce una URL de imagen"
+        [(ngModel)]="newNoticia.imagen"
+      />
+    </div>
+    <div class="formulario__input">
+      <label for="noticia">Noticia</label>
+      <input
+        type="text"
+        id="noticia"
+        placeholder="Introduce una noticia"
+        [(ngModel)]="newNoticia.texto"
+      />
+    </div>
+    <div class="formulario__input formulario__fecha">
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" [(ngModel)]="newNoticia.fecha" />
+    </div>
+    <button (click)="guardarNoticia()" class="formulario__btn">AÑADIR</button>
+  </div>
+</section>
+
+<section class="noticias">
+  <div class="noticias__header">
+    <h2 class="title-2">Noticias</h2>
+  </div>
+  <div
+    class="noticias__publicadas container"
+    [innerHTML]="cargarNoticias()"
+  ></div>
+</section>
