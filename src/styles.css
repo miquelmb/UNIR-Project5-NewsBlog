@@ -39,6 +39,7 @@ header {
   border-radius: 10px;
   padding: 1rem;
   margin: 2rem auto;
+  background: rgba(245, 245, 245, 0.096);
 }
 
 .formulario h2 {
@@ -103,7 +104,7 @@ header {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  background: rgba(245, 245, 245, 0.096);
+  background-color: rgba(245, 245, 245, 0.096);
 }
 
 .noticia h3 {
