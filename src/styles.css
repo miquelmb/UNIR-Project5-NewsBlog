@@ -8,7 +8,6 @@
 
 .title-1 {
   font-size: 2.2rem;
-  font-weight: 700;
 }
 
 .title-2 {
@@ -25,7 +24,7 @@
 header {
   padding: 1rem;
   text-align: center;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.25);
   background-color: rgb(247, 247, 239);
 }
 
@@ -42,12 +41,10 @@ header {
 
 .formulario h2 {
   padding: 0 1rem 1rem;
-  margin: 0 auto;
   text-align: center;
 }
 
 .formulario__form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +54,6 @@ header {
 .formulario__input {
   width: 80%;
   display: flex;
-  justify-content: center;
   gap: 1rem;
 }
 
@@ -67,22 +63,29 @@ header {
 
 .formulario__input input {
   width: 100%;
+  padding-left: 2px;
 }
 
 .formulario__btn {
-  padding: 0 0.8rem;
+  padding: 0.2rem 0.8rem;
   margin-top: 0.5rem;
+  border: 0.5px solid rgba(169, 169, 169, 0.25);
+  border-radius: 10px;
+}
+
+.formulario__btn:hover {
+  cursor: pointer;
+  background-color: rgb(73, 73, 73);
+  color: whitesmoke;
 }
 
 /* NOTICIAS */
 
 .noticias__header {
   padding: 1rem;
-  margin: 0 auto;
-  width: 100%;
   text-align: center;
-  border-top: 1px solid darkgrey;
-  border-bottom: 1px solid darkgrey;
+  border-top: 1px solid rgba(169, 169, 169, 0.25);
+  border-bottom: 1px solid rgba(169, 169, 169, 0.25);
   background-color: rgb(247, 247, 239);
 }
 
@@ -98,17 +101,16 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  border: 1px solid rgba(0, 139, 139, 0.517);
+  border: 1px solid rgba(0, 139, 139, 0.25);
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  background-color: rgba(245, 245, 245, 0.096);
+  background-color: rgba(245, 245, 245, 0.2);
 }
 
 .noticia h3 {
   line-height: 1.5rem;
   text-align: justify;
-  text-justify: auto;
   width: 95%;
 }
 .noticia img {
@@ -120,7 +122,6 @@ header {
   height: 200px;
   overflow: scroll;
   text-align: justify;
-  text-justify: auto;
   text-indent: 20px;
 }
 
